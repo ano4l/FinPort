@@ -4,7 +4,7 @@ from typing import List, Optional
 from app.database import get_db
 from app.models import Asset, AssetType, PriceHistory, Recommendation
 from app.schemas import Recommendation as RecommendationSchema
-from app.services.ml_recommendations import ml_engine
+from app.services.ml_recommendations_lite import ml_engine
 
 router = APIRouter(prefix="/api/recommendations", tags=["Recommendations"])
 

@@ -2,7 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from typing import Optional
 from app.database import get_db
-from app.services.analytics import analytics_service
+from app.services.analytics_lite import analytics_service
 
 router = APIRouter(prefix="/api/advanced-analytics", tags=["Advanced Analytics"])
 

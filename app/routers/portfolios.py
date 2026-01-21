@@ -9,7 +9,7 @@ from app.schemas import (
     TransactionCreate, Transaction as TransactionSchema,
     PortfolioAnalytics
 )
-from app.services.analytics import analytics_service
+from app.services.analytics_lite import analytics_service
 from app.services.market_data import market_data_service
 
 router = APIRouter(prefix="/api/portfolios", tags=["Portfolios"])
